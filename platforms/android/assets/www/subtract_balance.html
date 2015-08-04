@@ -13,7 +13,7 @@
 
 <table width="100%">
 <tr>
-<td id="nav"><button type="button" onclick="navopen()">NAV</button></td>
+<td id="nav"><button type="button">NAV</button></td>
 <td align="center"><p>Home</p></td>
 <td id="logo"><img src="logo.png"/></td>
 </tr>
@@ -25,27 +25,40 @@
 
 <table id="nav-bar-table">
 <tr>
-	<td><button type="button" onclick="navclose()">NAVIGATION</button></td>
+	<td><button type="button">NAVIGATION</button></td>
 </tr>
-	<td><button type="button" onclick="window.location.href='index.html'">HOME</button></td>
+	<td><button type="button">HOME</button></td>
 <tr>
 </tr>
 <tr>
-	<td><button type="button" onclick="window.location.href='goals.html'">GOALS</button></td>
+	<td><button type="button">GOALS</button></td>
 </tr>
 <tr>
-	<td><button type="button" onclick="window.location.href='alerts.html'">ALERTS</button></td>
+	<td><button type="button">ALERTS</button></td>
 </tr>
 <tr>
-	<td><button type="button" onclick="window.location.href='gps.html'">GPS</button></td>
+	<td><button type="button">GPS</button></td>
 </tr>
 <tr>
-	<td><button type="button" onclick="logout()">LOGOUT</button></td>
+	<td><button type="button">LOGOUT</button></td>
 </tr>
 </table>
 </div>
 
 <div id="home">
+
+<div id="moneyMinus">
+</br>
+<center>Specify amount to be subtracted</br></br>
+<input type="number" id="money_to_subtract"></center></br></br>
+Specify category this money was spent on</br></br>
+<input type="radio" name="category" value="Food"> Food</br>
+<input type="radio" name="category" value="Clothes"> Clothes </br>
+<input type="radio" name="category" value="Entertainment"> Entertainment</br>
+<input type="radio" name="category" value="Other"> Other</br></br>
+<button type="button" onclick="subtractbalance_vtwo()">Update</button>
+<button type="button" onclick="window.location.href='index.html'">Cancel</button>
+</div>
 
 <table>
 
@@ -74,7 +87,6 @@
 
 </div>
 
-<div id="test"></div>
 
 <script src="js/buttons.js"></script>
 <script>
@@ -102,6 +114,7 @@ console.log(User);
 if (User == null) {
 	window.location.href = 'welcome.html';
 }
+
 
 </script>
 

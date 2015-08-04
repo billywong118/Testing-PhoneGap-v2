@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html>
+<head>
+<script src="js/parse-1.5.0.min.js"></script>
+<script src="js/main-parse.js"></script>
+<link href='http://fonts.googleapis.com/css?family=Ubuntu:400,500,700' rel='stylesheet' type='text/css'>
+<link rel="stylesheet" href="stylesheet.css" type="text/css">
+<title>Alerts</title>
+</head>
+
+<body>
+<header>
+
+<table width="100%">
+<tr>
+<td id="nav"><button type="button" onclick="navopen()">NAV</button></td>
+<td align="center"><p>Alerts</p></td>
+<td id="logo"><img src="logo.png"/></td>
+</tr>
+</table>
+
+</header>
+
+<div id="nav-bar">
+
+<table id="nav-bar-table">
+<tr>
+	<td><button type="button" onclick="navclose()">NAVIGATION</button></td>
+</tr>
+	<td><button type="button" onclick="window.location.href='index.html'">HOME</button></td>
+<tr>
+</tr>
+<tr>
+	<td><button type="button" onclick="window.location.href='goals.html'">GOALS</button></td>
+</tr>
+<tr>
+	<td><button type="button" onclick="window.location.href='alerts.html'">ALERTS</button></td>
+</tr>
+<tr>
+	<td><button type="button" onclick="window.location.href='gps.html'">GPS</button></td>
+</tr>
+<tr>
+	<td><button type="button" onclick="logout()">LOGOUT</button></td>
+</tr>
+</table>
+
+</div>
+
+<div id="alerts">
+
+<table id="alert-head">
+<tr>
+<td width="230px">Alerts</td>
+<td>
+<div class="onoffswitch">
+    <input type="checkbox" onclick="alert_status()" name="onoffswitch" class="onoffswitch-checkbox" id="myonoffswitch" checked>
+    <label class="onoffswitch-label" for="myonoffswitch">
+        <span class="onoffswitch-inner"></span>
+        <span class="onoffswitch-switch"></span>
+    </label>
+</div>
+</td>
+</tr>
+</table>
+
+<table id="alert-options">
+
+<tr>
+<td>Goals Alert</td>
+<td><input type="checkbox" name="goals-status"></td>
+</tr>
+<tr>
+<td>Daily Check-In Alert</td>
+<td><input type="checkbox" name="checkin-status"></td>
+</tr>
+<tr>
+<td>GPS Alert</td>
+<td><input type="checkbox" name="gps-status"></td>
+</tr>
+
+</table>
+
+</div>
+
+
+<script src="js/buttons.js">
+</script>
+
+<script>
+
+
+</script>
+
+</body>
+</html>
+ 

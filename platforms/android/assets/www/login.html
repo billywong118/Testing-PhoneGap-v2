@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+<head>
+<link href='http://fonts.googleapis.com/css?family=Ubuntu:400,500,700' rel='stylesheet' type='text/css'>
+<link rel="stylesheet" href="stylesheet.css" type="text/css">
+<title>Log In</title>
+</head>
+
+<body>
+<header>
+
+<table width="100%">
+<tr>
+<td align="center"><p>Log In</p></td>
+<td id="logo"><img src="logo.png"/></td>
+</tr>
+</table>
+
+</header>
+
+<div id="login">
+
+<form method="POST">
+
+<p id="login-id">
+Email: 
+<p><input type="text" id="email"></p>
+</p>
+
+<p id="login-pass">
+Password:
+<p><input type="password" id="password"></p>
+</p>
+
+<p id="login-button">
+<input type="submit" value="LOG IN" onclick="login()">
+</p>
+
+</form>
+
+<p id="forget">
+Forgot your password?</br><a href="forgot.html">Click here.</a>
+</br>
+</br>
+Don't have an account?</br><a href="signup.html">Sign up here.</a>
+</p>
+
+</div>
+
+<script src="js/parse-1.5.0.min.js"></script>
+<script src="js/login.js"></script>
+
+
+</body>
+</html>

@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+<head>
+<script src="js/jquery-1.8.2.min.js"></script>
+<script src="js/parse-1.5.0.min.js"></script>
+<script src="js/signup.js"></script>
+<link href='http://fonts.googleapis.com/css?family=Ubuntu:400,500,700' rel='stylesheet' type='text/css'>
+<link rel="stylesheet" href="stylesheet.css" type="text/css">
+<title>Sign Up</title>
+</head>
+
+<body>
+<header>
+
+<table width="100%">
+<tr>
+<td align="center"><p>Sign Up</p></td>
+<td id="logo"><img src="logo.png"/></td>
+</tr>
+</table>
+
+</header>
+
+<div id="signup">
+
+<form id="create-account">
+
+<table>
+	<tr>
+		<td>Name:</td> 
+		<td><input type="text" id="full_name" value=""></td>
+	</tr>
+	<tr>
+		<td>Email:</td>
+		<td><input type="email" id="email" value=""></td>
+	</tr>
+	<tr>
+		<td>Password:</td>
+		<td><input type="password" id="password" value=""></td>
+	</tr>
+	<tr>
+		<td>Confirm password:</td>
+		<td><input type="password" id="password2" value=""></td>
+	</tr>
+	<tr>
+		<td></td>
+		<td align="center "id="register" onclick="create()"><input type="submit" value="REGISTER"></td>
+	</tr>
+	<tr>
+		<td id="back-to-welcome"><a href="welcome.html"><span>Back</span></a></td>
+	</tr>
+</table>
+
+</form>
+
+</div>
+
+</body>
+</html>

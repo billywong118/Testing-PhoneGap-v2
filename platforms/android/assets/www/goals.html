@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html>
+<head>
+<link href='http://fonts.googleapis.com/css?family=Ubuntu:400,500,700' rel='stylesheet' type='text/css'>
+<link rel="stylesheet" href="stylesheet.css" type="text/css">
+<title>Goals</title>
+</head>
+
+<body onload="setToday(); get_goals()">
+<header>
+
+<table width="100%">
+<tr>
+<td id="nav"><button type="button" onclick="navopen()">NAV</button></td>
+<td align="center"><p>Goals</p></td>
+<td id="logo"><img src="logo.png"/></td>
+</tr>
+</table>
+
+
+</header>
+
+<div id="nav-bar">
+
+<table id="nav-bar-table">
+<tr>
+	<td><button type="button" onclick="navclose()">NAVIGATION</button></td>
+</tr>
+	<td><button type="button" onclick="window.location.href='index.html'">HOME</button></td>
+<tr>
+</tr>
+<tr>
+	<td><button type="button" onclick="window.location.href='goals.html'">GOALS</button></td>
+</tr>
+<tr>
+	<td><button type="button" onclick="window.location.href='alerts.html'">ALERTS</button></td>
+</tr>
+<tr>
+	<td><button type="button" onclick="window.location.href='gps.html'">GPS</button></td>
+</tr>
+<tr>
+	<td><button type="button" onclick="logout()">LOGOUT</button></td>
+</tr>
+</table>
+
+</div>
+
+
+<div id="goals">
+
+<table>
+<tr>
+<td><button type="button" id="create-goal" onclick="window.location.href='create-goal.html'">CREATE A GOAL</button></td>
+</tr>
+</table>
+
+</br>
+
+<div id="month" align="center">
+</div>
+<table id="calendar">
+<tr>
+<td>Sun</td>
+<td>Mon</td>
+<td>Tue</td>
+<td>Wed</td>
+<td>Thu</td>
+<td>Fri</td>
+<td>Sat</td>
+</tr>
+<tr>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td id="next-week"></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+</table>
+
+
+<table id="current_goals">
+<tr>
+<td>
+<div id="current-goals_label">
+<b><center>Current Goals</center></b>
+</div>
+</td>
+</tr>
+
+<!--<tr>
+<td>
+<div class="current_goal">
+Goal:</br>
+</br>
+Cost:</br>
+</br>
+Time Left to Complete Goal:</br>
+</br>
+Money Saved:</br>
+</br>
+Money Needed:</br>
+</br>
+</div>
+</td>
+</tr>-->
+
+</table>
+
+
+</div>
+
+<div id="h"></div>
+
+</br>
+
+
+
+
+<script src="js/buttons.js"></script>
+
+<script type="text/javascript" src="js/calendar.js"></script>
+<script src="js/parse-1.5.0.min.js"></script>
+<script src="js/main-parse.js"></script>
+
+</body>
+</html>
