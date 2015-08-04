@@ -4,8 +4,9 @@
     <description>
         Monifest testing!
     </description>
-    <author email="support@phonegap.com" href="http://phonegap.com">
-        PhoneGap Team
+	<icon src="logo.png" />
+    <author email="monifest4@gmail.com" href="http://gmail.com">
+        Monifest
     </author>
     <content src="index.html" />
     <preference name="permissions" value="none" />

@@ -4,6 +4,7 @@ var UserObject = Parse.Object.extend("Users");
 var email = window.localStorage.getItem("User");
 var object;
 
+
 function get_balance() {
 	
 	var balance;
