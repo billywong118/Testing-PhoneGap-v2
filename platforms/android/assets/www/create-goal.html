@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html>
+<head>
+<script src="js/parse-1.5.0.min.js"></script>
+<script src="js/main-parse.js"></script>
+<link href='http://fonts.googleapis.com/css?family=Ubuntu:400,500,700' rel='stylesheet' type='text/css'>
+<link rel="stylesheet" href="stylesheet.css" type="text/css">
+<title>Create Goal</title>
+</head>
+
+<body>
+<header>
+
+<table width="100%">
+<tr>
+<td id="nav"><button type="button" onclick="navopen()">NAV</button></td>
+<td align="center"><p style="font-size:34.25px">Create Goal</p></td>
+<td id="logo"><img src="logo.png"/></td>
+</tr>
+</table>
+
+</header>
+
+<div id="nav-bar">
+
+<table id="nav-bar-table">
+<tr>
+	<td><button type="button" onclick="navclose()">NAVIGATION</button></td>
+</tr>
+	<td><button type="button" onclick="window.location.href='index.html'">HOME</button></td>
+<tr>
+</tr>
+<tr>
+	<td><button type="button" onclick="window.location.href='goals.html'">GOALS</button></td>
+</tr>
+<tr>
+	<td><button type="button" onclick="window.location.href='alerts.html'">ALERTS</button></td>
+</tr>
+<tr>
+	<td><button type="button" onclick="window.location.href='gps.html'">GPS</button></td>
+</tr>
+<tr>
+	<td><button type="button" onclick="logout()">LOGOUT</button></td>
+</tr>
+</table>
+
+</div>
+
+<div id="goal-creation">
+<table>
+<tr>
+<td>Goal:</br><input type="text" id="goal_name"></td>
+</tr>
+<tr>
+<td>Cost:</br>$<input type="number" id="goal_cost"></td>
+</tr>
+<tr>
+<td>Aim Date:</br><input type="date" id="goal_date"></td>
+</tr>
+<tr>
+<td><input id="create-goal-button" type="submit" value="CREATE" onclick="create_goal()"></td>
+</tr>
+
+<table>
+</div>
+
+<div id="h"></div>
+
+<script>
+
+/*var date1 = new Date("2015-8-5");
+var date2 = new Date("2010-12-12");
+var timeDiff = Math.abs(date2.getTime() - date1.getTime());
+var diffDays = Math.round(timeDiff / (1000 * 3600 * 24)); 
+alert(diffDays)*/ 
+
+</script>
+
+<script src="js/buttons.js"></script>
+
+<script src="js/parse-1.5.0.min.js"></script>
+<script src="js/main-parse.js"></script>
+
+</body>
+</html>
+ 

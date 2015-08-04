@@ -1,0 +1,614 @@
+/*----------------------------
+GENERAL
+-----------------------------*/
+
+/*width of screen is 356px*/
+
+* {
+	font-family: 'Ubuntu', sans-serif;
+	margin: 0;
+}
+
+body {
+	background-color: #6DFD6F;
+}
+
+header {
+	border-bottom: 1px solid black;
+	padding: 0;
+	z-index: 1;
+	background-color: #6DFD6F;
+}
+
+header p {
+	color: #676CFB;
+	font-size: 45px;
+	font-weight: bold;
+}
+
+header img {
+	height: 50px;
+	margin-right: 10px;
+	margin-top: 10px;
+}
+
+#logo {
+	width: 60px;
+}
+
+a {
+	text-decoration: none;
+}
+
+a:link {
+	color: blue;
+}
+
+a:visited {
+	color: blue;
+}
+
+a:hover {
+	color: #3232ff;
+}
+
+input {
+	background-color: white;
+	font-size: 100%;
+}
+
+#nav button{
+	background-color: #08AE9E;
+	color: white;
+	height: 46px;
+	width: 77px;
+	font-size: 18.75px;
+	border-radius: 15%;
+	border: none;
+	
+}
+
+#nav {
+	width: 77px;
+	padding-left: 10px; 
+}
+
+#nav-bar {
+	display: none;
+}
+
+#testing {
+	color: blue;
+}
+
+#nav-bar  table, #nav-bar td{
+	margin-top: -70px;
+	margin-left: 40px;
+	margin-left: 0px;
+	background-color: #6DFD30;
+	position: relative;
+	z-index: 5;
+	border: 1px solid grey;
+	
+}
+
+#nav-bar table td {
+	padding: 15px;
+}
+
+#nav-bar button {
+	background-color: #08AE9E;
+	width: 130px;
+	height: 46px;
+	color: white;
+	font-size: 18.75px;
+	border-radius: 15%;
+	border: none;
+}
+
+/*-----------------------------
+WELCOME
+-----------------------------*/
+
+#welcome {
+	text-align: center;
+	background-color: #6DFD6F;
+}
+
+#hello {
+	color: #676CFB;
+	font-size: 45px;
+	font-weight: normal;
+	margin-top: 118px/*29.375%*/;
+}
+
+#options {
+	font-size: 27.5px;
+	margin-top: 98px/*30.625%*/;
+}
+
+#options  a {
+	text-decoration: none;
+}
+
+/*-----------------------------
+SIGN UP 
+-----------------------------*/
+
+#signup {
+	font-size: 25px;
+	color: #676CFB;
+	margin-left: 13px;
+	background-color: #6DFD6F;
+}
+
+#signup input {
+	width: 182px;
+	height: 32px;
+}
+
+#signup table {
+	margin-top: 29px/*10%*/;
+	max-width: 98%;
+}
+
+#signup table td {
+	padding: 10px 0;
+}
+
+#register input{
+	background-color: #08AE9E;
+	color: white;
+	height: 40px;
+	width: 117px;
+	font-size: 18.75px;
+	border-radius: 15%;
+	border: none;
+	padding: 0;
+}
+
+#back-to-welcome {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 12px;
+    padding: 10px;
+}
+
+#back-to-welcome a {
+    background: #950006;
+    background: -moz-linear-gradient(top, #de0009 0%, #950006 100%);
+    background: -o-linear-gradient(top, #de0009 0%, #950006 100%);
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #de0009), color-stop(100%, #950006));
+    background: -webkit-linear-gradient(top, #de0009 0%, #950006 100%);
+    background: linear-gradient(top, #de0009 0%, #950006 100%);
+    border: solid #dd0009;
+    border-width: 1px 1px 1px 0;
+    -moz-border-radius: 0 5px 5px 0;
+    -webkit-border-radius: 0 5px 5px 0;
+    border-radius: 0 5px 5px 0;
+    display: inline-block;
+    height: 28px;
+    line-height: 28px;
+    margin-left: 20px;
+    margin-right: 2px;
+    padding: 0 7px 0 3px;
+    position: relative;
+    text-decoration: none;
+}
+
+#back-to-welcome a:before {
+    background: #950006;
+    background: -moz-linear-gradient(-45deg, #de0009 0%, #950006 100%);
+    background: -o-linear-gradient(-45deg, #de0009 0%, #950006 100%);
+    background: -webkit-gradient(linear, left top, right bottom, color-stop(0%, #de0009), color-stop(100%, #950006));
+    background: -webkit-linear-gradient(-45deg, #de0009 0%, #950006 100%);
+    background: linear-gradient(-45deg, #de0009 0%, #950006 100%);
+    border: solid #dd0009;
+    border-width: 0 0 1px 1px;
+    border-radius: 2px 0 2px 2px;
+    content: '';
+    display: block;
+    height: 21px;
+    left: -11px;
+    position: absolute;
+    top: 3px;
+    -moz-transform: rotate(45deg);
+    -webkit-transform: rotate(45deg);
+    -o-transform: rotate(45deg);
+    transform: rotate(45deg);
+    width: 21px;
+}
+
+#back-to-welcome a:hover, #back-to-welcome a:focus {
+    border-color: #b50007;
+    background: #7e0004;
+    background: -moz-linear-gradient(top, #b50007 0%, #7e0004 100%);
+    background: -o-linear-gradient(top, #b50007 0%, #7e0004 100%);
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #b50007), color-stop(100%, #7e0004));
+    background: -webkit-linear-gradient(top, #b50007 0%, #7e0004 100%);
+    background: linear-gradient(top, #b50007 0%, #7e0004 100%);
+}
+
+#back-to-welcome a:hover:before, #back-to-welcome a:focus:before {
+    border-color: #b50007;
+    background: #7e0004;
+    background: -moz-linear-gradient(-45deg, #b50007 0%, #7e0004 100%);
+    background: -o-linear-gradient(-45deg, #b50007 0%, #7e0004 100%);
+    background: -webkit-gradient(linear, left top, right bottom, color-stop(0%, #b50007), color-stop(100%, #7e0004));
+    background: -webkit-linear-gradient(-45deg, #b50007 0%, #7e0004 100%);
+    background: linear-gradient(-45deg, #b50007 0%, #7e0004 100%);
+}
+
+#back-to-welcome a span {
+    color: #fff;
+    font-weight: bold;
+    position: relative;
+}
+
+/*----------------------------
+LOGIN
+----------------------------*/
+
+#login {
+	margin-left: 10%;
+	color: #676CFB;
+	font-size: 30px;
+	background-color: #6DFD6F;
+}
+
+#login-id {
+	margin-top: 63px;/*18.75%*/;
+}
+
+#login-pass {
+	margin-top: 50px/*16.09375%*/;
+}
+
+#login input {
+	width: 260px;
+	height: 32px;
+}
+
+#login-button input{
+	background-color: #08AE9E;
+	color: white;
+	height: 46px;
+	width: 221px;
+	font-size: 18.75px;
+	margin-top: 30px/*9.6875%*/;
+	border-radius: 15%;
+	border: none;
+}
+
+#forget {
+	font-size: 17.5px;
+	margin-top: 50px/*21.25%*/;
+}
+
+/*-------------------------------
+FORGOT PASSWORD
+--------------------------------*/
+
+#forgot {
+	margin-left: 10%;
+	color: #676CFB;
+	font-size: 30px;
+	background-color: #6DFD6F;
+}
+
+#forgot input {
+	height: 32px;
+	width: 222px;
+}
+
+#forgot table {
+	margin-top: 60px;
+}
+
+#forgot table td {
+	padding: 20px 0;
+}
+
+#forgot-button input{
+	background-color: #08AE9E;
+	color: white;
+	height: 46px;
+	width: 221px;
+	font-size: 18.75px;
+	border-radius: 15%;
+	border: none;
+}
+
+/*----------------------
+HOME
+----------------------*/
+
+#home {
+	position: fixed;
+	z-index: 1;
+	display: inline-block;
+	background-color: #6DFD6F;
+}
+
+#home table {
+	width: 90%;
+	margin: 92px 0 0 10%;
+	text-align: center;
+}
+
+#date {
+	color: #676CFB;
+	font-size: 35px;
+	text-align: center;
+	height: 80px;
+	vertical-align: center;
+}
+
+#balance-label {
+	font-size: 45px;
+	color: #676CFB;
+	text-align: center;
+	padding-top: 22px;
+}
+
+#balance {
+	font-size: 45px;
+	color: red;
+	text-align: center;
+	/*MAKE SURE BALANCE DOES NOT FLOW TOO MUCH TO THE RIGHT*/
+}
+
+#add-balance, #subtract-balance {
+	height: 80px;
+	width: 80px;
+	border-radius: 100%;
+	background-color: #08AE9E;
+	color: white;
+	font-size: 80px;
+	font-weight: bold;
+	border: none;
+	line-height: 80px;
+}
+
+.balance-button {
+	padding-top: 40px;
+}
+
+.change-balance {
+	font-size: 22.5px;
+	color: #676CFB;
+	text-align: center;
+	padding-top: 5px;
+}
+
+#moneyMinus {
+	margin-top: 220px;
+	margin-left: 5%;
+	background-color: black;
+	position: fixed;
+	z-index: 5;
+	border: 5px outset grey;
+	color: white;
+	font-size: 20px;
+	width: 90%;
+}
+
+/*---------------------------------
+GOALS
+---------------------------------*/
+
+#goals {
+	margin: 0px 0 0 0;
+	background-color: #6DFD6F;
+}
+
+#goals table td {
+	padding: 7.5px;
+	text-align: center;
+}
+
+#create-goal {
+	width: 330px;
+	height: 45px;
+	border: 1px solid #c00;
+	border-radius: 15%;
+	background-color: red;
+	font-size: 18.75px;
+	color: white;
+	margin-left: 7.5px;
+}
+
+#view-goals {
+	width: 161px;
+	height: 45px;
+	border: none;
+	border-radius: 15%;
+	background-color: green;
+	font-size: 18.75px;
+	color: white;
+}
+
+#calendar {
+	text-align: center;
+	border: 1px solid black;
+	margin: auto;
+	background-color: black;
+	margin: 12.5px 0px 12.5px 7.5px;
+}
+
+#calendar td {
+	background-color: violet;
+	width: 30px;
+}
+
+#current_goals {
+	margin: auto;
+	width: 95%;
+}
+
+#current-goals_label{
+	text-align: center;
+	margin: auto;
+	color: green;
+	font-size: 40px;
+}
+
+.current_goal {
+	width: 100%;
+	text-align: left;
+	background-color: #0ff;
+	color: #651BD2;
+	font-size: 23px;
+	margin: 25px auto auto 0;
+	border: 1px solid black;
+}
+
+/*-------------------------------------
+CREATE GOALS-
+---------------------------------------*/
+
+#goal-creation {
+	position: fixed;
+	color: #676CFB;
+	font-size: 30px;
+	background-color: #6DFD6F;
+}
+
+#goal-creation table {
+		margin: 75px 0 0 55px;
+}
+
+#goal-creation td {
+	padding: 15px 0 ;
+}
+
+#goal_name, #goal_date {
+	width: 222px;
+	height: 32px;
+}
+
+#goal_cost {
+	width: 205px;
+	height: 32px;
+}
+
+
+#create-goal-button{
+	background-color: #08AE9E;
+	color: white;
+	height: 46px;
+	width: 145px;
+	font-size: 18.75px;
+	border-radius: 15%;
+	border: none;
+}
+
+/*-----------------------------
+GPS
+-------------------------------*/
+
+#map-canvas {
+	height: 80%;
+	width: 80%;
+	margin: 10%;
+	border: 1px solid black;
+}
+
+#gps table {
+	margin-top: 15px;
+}
+
+#add-marker {
+	margin-left:10px;
+	width:330px;
+	height:67px;
+	color:white;
+	background-color:red;
+	border-radius:15%;
+	font-size:18px;
+}
+
+#remove-marker {
+	margin-left:10px;
+	width:330px;
+	height:67px;
+	color:white;
+	background-color:blue;
+	border-radius:15%;
+	font-size:18px;
+}
+
+/*--------------------------------
+ALERTS
+--------------------------------*/
+#alerts {
+	font-size: 30px;
+	color: #676CFB;
+}
+
+#alert-head{
+	margin: 40px 0 0 18px;
+}
+
+#alerts input {
+	width: 27px;
+	height: 27px;
+}
+
+#alert-options {
+	margin: 30px 0 0 40px;
+}
+
+#alert-options td {
+	padding: 10px 0;
+}
+
+	/*SWITCH BUTTON*/
+.onoffswitch {
+    position: relative; width: 82px;
+    -webkit-user-select:none; -moz-user-select:none; -ms-user-select: none;
+}
+.onoffswitch-checkbox {
+    display: none;
+}
+.onoffswitch-label {
+    display: block; overflow: hidden; cursor: pointer;
+    border: 2px solid #999999; border-radius: 20px;
+}
+.onoffswitch-inner {
+    display: block; width: 200%; margin-left: -100%;
+    transition: margin 0.3s ease-in 0s;
+}
+.onoffswitch-inner:before, .onoffswitch-inner:after {
+    display: block; float: left; width: 50%; height: 30px; padding: 0; line-height: 30px;
+    font-size: 14px; color: white; font-family: Trebuchet, Arial, sans-serif; font-weight: bold;
+    box-sizing: border-box;
+}
+.onoffswitch-inner:before {
+    content: "ON";
+    padding-left: 10px;
+    background-color: #34A7C1; color: #FFFFFF;
+}
+.onoffswitch-inner:after {
+    content: "OFF";
+    padding-right: 10px;
+    background-color: #EEEEEE; color: #999999;
+    text-align: right;
+}
+.onoffswitch-switch {
+    display: block; width: 35px; margin: -2.5px;
+    background: #FFFFFF;
+    position: absolute; top: 0; bottom: 0;
+    right: 48px;
+    border: 2px solid #999999; border-radius: 20px;
+    transition: all 0.3s ease-in 0s; 
+}
+.onoffswitch-checkbox:checked + .onoffswitch-label .onoffswitch-inner {
+    margin-left: 0;
+}
+.onoffswitch-checkbox:checked + .onoffswitch-label .onoffswitch-switch {
+    right: 0px; 
+}
+	/*SWITCH BUTTON*/
+	
+
+

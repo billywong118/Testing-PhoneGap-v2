@@ -47,6 +47,16 @@
 
 <div id="home">
 
+<div id="moneyMinus">
+Specify amount to be subtracted.</br>
+<input type="number"></br></br>
+Specify category this money was spent on.</br>
+<input type="radio" name="category" value="Food"> Food</br>
+<input type="radio" name="category" value="Clothes"> Clothes </br>
+<input type="radio" name="category" value="Entertainment"> Entertainment</br>
+<input type="radio" name="category" value="Other"> Other</br>
+</div>
+
 <table>
 
 <tr>
@@ -77,33 +87,7 @@
 <div id="test"></div>
 
 <script src="js/buttons.js"></script>
-<script>
 
-var d = new Date();
-var weekday = new Array(7);
-weekday[0]=  "Sunday";
-weekday[1] = "Monday";
-weekday[2] = "Tuesday";
-weekday[3] = "Wednesday";
-weekday[4] = "Thursday";
-weekday[5] = "Friday";
-weekday[6] = "Saturday";
-
-var day = weekday[d.getDay()];
-
-var wholedate = Date().split(' ');
-var basicdate = wholedate[1] + ' ' + wholedate[2] + ' ' + wholedate[3];
-
-document.getElementById("date").innerHTML = day + ', ' + basicdate;
-
-var User = window.localStorage.getItem("User");
-console.log(User);
-
-if (User == null) {
-	window.location.href = 'welcome.html';
-}
-
-</script>
 
 </body>
 </html>
